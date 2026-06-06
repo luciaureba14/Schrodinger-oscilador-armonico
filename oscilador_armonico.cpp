@@ -279,7 +279,7 @@ int main() {
 
        
         // Encendido del campo electrico del efecto stark
-
+            /*
             if (t == t_encendido) {
                 // Actualizamos el potencial para todo el espacio
                 for (int j = 0; j <= N; ++j) {
@@ -296,7 +296,7 @@ int main() {
                 }
                 cout << "Campo electrico encendido en el paso t = " << t << " (Tiempo: " << t * s << ")" << endl;
             }
-        
+            */
         
 
         double integral_norma = CalcularNorma(phi, N, h);
@@ -306,10 +306,10 @@ int main() {
         double esp_p2 = CalcularEsperadoP2(phi, N, h);
         
         //Si no hay efecto Stark calculamos la energia asi:
-        //double esp_H = CalcularEsperadoEnergia(phi, N, h, omega, L);
+        double esp_H = CalcularEsperadoEnergia(phi, N, h, omega, L);
 
         
-        
+        /*
         // Si hay efecto Stark calculamos la energia asi:
         double esp_H = 0.0;
             if (t >= t_encendido) {
@@ -317,6 +317,7 @@ int main() {
             } else {
                 esp_H = CalcularEsperadoEnergia(phi, N, h, omega, L);
             }
+        */
         
 
         // Calculamos la incertidumbre usando los valores esperados

@@ -203,7 +203,7 @@ double CalcularEsperadoEnergiaStark(const vector<complex<double>>& phi, int N, d
 int main() {
     
     // --- PARÁMETROS DE LA RED ---
-    const double L = 0.8;             // Longitud de la caja 
+    const double L = 0.8;           // Longitud de la caja 
     const int N = 1000;             // Intervalos en los que la vamos a dividir  
     const double h = L / N;         // Paso espacial 
     const double s = 0.0001;        // Paso temporal   
